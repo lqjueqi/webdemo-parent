@@ -1,0 +1,18 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lqjueqi/microservicecloud-config.git
+        #uri: https://gitee.com/better_than_brother/config.git
+          search-paths:
+            - config
+      label: master
+server:
+  port: 8888

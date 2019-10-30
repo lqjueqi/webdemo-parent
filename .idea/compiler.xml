@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="webdemo-broswer" />
+        <module name="webdemo-api-order" />
+        <module name="webdemo-zookeeper" />
+        <module name="webdemo-eureka" />
+        <module name="webdemo-api-order-impl" />
+        <module name="webdemo-api-member" />
+        <module name="webdemo-user" />
+        <module name="webdemo-api-member-impl" />
+        <module name="webdemo-eureka1" />
+        <module name="webdemo-config-server" />
+        <module name="webdemo-common" />
+        <module name="webdemo-config-client" />
+        <module name="webdemo-gateway" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="webdemo-interfaces" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="webdemo-api" options="-parameters" />
+      <module name="webdemo-api-member" options="-parameters" />
+      <module name="webdemo-api-member-impl" options="-parameters" />
+      <module name="webdemo-api-order" options="-parameters" />
+      <module name="webdemo-api-order-impl" options="-parameters" />
+      <module name="webdemo-broswer" options="-parameters" />
+      <module name="webdemo-common" options="-parameters" />
+      <module name="webdemo-config-client" options="-parameters" />
+      <module name="webdemo-config-server" options="-parameters" />
+      <module name="webdemo-eureka" options="-parameters" />
+      <module name="webdemo-eureka1" options="-parameters" />
+      <module name="webdemo-gateway" options="-parameters" />
+      <module name="webdemo-interfaces" options="-parameters" />
+      <module name="webdemo-parent" options="-parameters" />
+      <module name="webdemo-user" options="-parameters" />
+      <module name="webdemo-zookeeper" options="-parameters" />
+    </option>
+  </component>
+</project>

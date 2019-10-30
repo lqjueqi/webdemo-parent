@@ -1,0 +1,16 @@
+server:
+  port: 8002
+eureka:
+  #instance:
+    #hostname: 127.0.0.1
+    #lease-renewal-interval-in-seconds: 1
+    #lease-expiration-duration-in-seconds: 2
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+      #,http://localhost:8200/eureka
+    register-with-eureka: true
+    fetch-registry: true
+spring:
+  application:
+    name: webdemo-member

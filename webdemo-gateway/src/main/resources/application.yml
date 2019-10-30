@@ -1,0 +1,17 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka
+server:
+  port: 80
+spring:
+  application:
+    name: webdemo-zuul
+zuul:
+  routes:
+    api-a:
+      path: /api-member/**
+      serviceId: webdemo-member
+    api-b:
+      path: /api-order/**
+      serviceId: webdemo-order
